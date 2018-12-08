@@ -49,7 +49,7 @@ li a:hover {
     margin-right: 260px;
 }
 
-.mainPage {
+.portMainPage {
     background-color: white;
     border: 1px solid #777777;
     max-width: 920px;
@@ -58,6 +58,31 @@ li a:hover {
     margin-bottom: 100px;
     min-height: calc(100vh - 70px);
     margin-top: 50px;
+    height: 700px;
+}
+
+.indexMainPage {
+    background-color: white;
+    border: 1px solid #777777;
+    max-width: 920px;
+    margin: auto;
+    padding: 20px 20px;
+    margin-bottom: 100px;
+    min-height: calc(100vh - 70px);
+    margin-top: 50px;
+    height: 650px;
+}
+
+.contactMainPage {
+    background-color: white;
+    border: 1px solid #777777;
+    max-width: 920px;
+    margin: auto;
+    padding: 20px 20px;
+    margin-bottom: 100px;
+    min-height: calc(100vh - 70px);
+    margin-top: 50px;
+    height: 300px;
 }
 
 footer {

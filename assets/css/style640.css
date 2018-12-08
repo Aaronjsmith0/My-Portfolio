@@ -51,7 +51,7 @@
         margin-right: 30px;
     }
 
-    .mainPage {
+    .portMainPage {
         background-color: white;
         border: 1px solid #777777;
         max-width: 500px;
@@ -60,7 +60,31 @@
         margin-bottom: 100px;
         min-height: calc(100vh - 70px);
         margin-top: 50px;
-        height: 1700px;
+        height: 1200px;
+    }
+
+    .indexMainPage {
+        background-color: white;
+        border: 1px solid #777777;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px 20px;
+        margin-bottom: 100px;
+        min-height: calc(100vh - 70px);
+        margin-top: 50px;
+        height: 1120px;
+    }
+
+    .contactMainPage {
+        background-color: white;
+        border: 1px solid #777777;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px 20px;
+        margin-bottom: 100px;
+        min-height: calc(100vh - 70px);
+        margin-top: 50px;
+        height: 300px;
     }
     
     footer {
@@ -118,8 +142,8 @@
     
     .portimg {  
        margin: 10px auto 10px auto;
-       height: 300px;
-       width: 300px; 
+       height: 200px;
+       width: 200px; 
        border: 1px solid #777777;
     }
     
@@ -128,7 +152,7 @@
         text-align: center;
         color: white;
         width: 400px;
-        height: 300px;
+        height: 200px;
         float: left;
         margin-right: 30px;
         margin-left: 30px;
@@ -139,11 +163,12 @@
         position: absolute;
         bottom: 8px;
         color: white;
-        width: 300px;
+        width: 200px;
         background-color: #4aaaa5;
         margin-left: 50px;
         height: 25px;
         padding-top: 5px;
+        margin-left: 100px;
     }
     
     .spacing {
