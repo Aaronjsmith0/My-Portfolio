@@ -80,7 +80,7 @@ li a:hover {
     margin: auto;
     padding: 20px 20px;
     margin-bottom: 100px;
-    min-height: calc(100vh - 70px);
+    min-height: 450px;
     margin-top: 50px;
     height: 300px;
 }
@@ -138,11 +138,11 @@ h3 {
     border-style: none;
 }
 
-.portimg {  
-   margin: 10px 10px;
-   height: 170px;
-   width: 170px; 
-   border: 1px solid #777777;
+.portimg {
+    margin: 10px 10px;
+    height: 170px;
+    width: 170px;
+    border: 1px solid #777777;
 }
 
 .container {
@@ -153,7 +153,7 @@ h3 {
     height: 170px;
     float: left;
     margin-right: 30px;
-    
+
 }
 
 .bottom-right {
@@ -170,4 +170,66 @@ h3 {
 .spacing {
     width: 200px;
     height: 200px;
+}
+
+@media screen and (max-width: 980px) {
+    .indexMainPage {
+        max-width: 800px;
+        height: 720px;
+    }
+
+    .portMainPage {
+        max-width: 800px;
+    }
+
+    .contactMainPage {
+        max-width: 800px;
+    }
+
+    .name {
+        margin-left: 60px;
+    }
+
+    .navLinks {
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .indexMainPage {
+        max-width: 590px;
+        height: 950px;
+    }
+
+    .portMainPage {
+        max-width: 590px;
+    }
+
+    .contactMainPage {
+        max-width: 590px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .indexMainPage {
+        max-width: 500px;
+        height: 1100px;
+    }
+
+    .portMainPage {
+        max-width: 500px;
+    }
+
+    .contactMainPage {
+        max-width: 500px;
+    }
+
+    .name {
+        margin-left: 30px;
+    }
+
+    .navLinks {
+        margin-right: 30px;
+    }
 }
