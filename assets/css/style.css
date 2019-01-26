@@ -203,6 +203,11 @@ h3 {
 
     .portMainPage {
         max-width: 590px;
+        height: 650px;
+    }
+    
+    .container {
+        margin-right: 10px;
     }
 
     .contactMainPage {
@@ -219,6 +224,16 @@ h3 {
 
     .portMainPage {
         max-width: 500px;
+        height: 800px;
+    }
+
+    .container {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .spacing {
+        width: 100px;
+        height: 100px;
     }
 
     .contactMainPage {
