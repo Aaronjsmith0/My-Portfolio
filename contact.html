@@ -7,6 +7,8 @@
     <link rel="stylesheet" text="style/css" href="assets/css/reset.css">
     <link rel="stylesheet" text="style/css" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/images/A.png" type="image/x-icon"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
     <title>Aaron's Awesome Portfolio</title>
 </head>
 <body background="assets/images/cork-wallet.png">
@@ -27,16 +29,17 @@
         </div>
         <h3>Name</h3>
         <form>
-            <input class="textBox" type="text" name="Name" placeholder="John Smith"><br>
+            <input class="textBox" id="name-input" type="text" name="Name" placeholder="John Smith"><br>
         <h3 style="padding-top:5px;">Email</h3>
-            <input class="textBox" type="text" name="Email" placeholder="example@gmail.com"><br>
+            <input class="textBox" id="email-input" type="text" name="Email" placeholder="example@gmail.com"><br>
         <h3 style="padding-top:5px;">Message</h3>
-            <input style="height:200px;" class="textBox" type="text" name="Message"><br>
-        <input class="submit" type="submit" value="Submit">
+            <input style="height:200px;" class="textBox" id="message-input" type="text" name="Message"><br>
+        <input class="submit" id="submit-input" type="submit" value="Submit">
         </form>
     </section>
     <footer>
         <p style="padding-top:20px;">Ajsmith LLC</p>
     </footer>
+    <script src="assets/javascript/javascript.js"></script>
 </body>
 </html>
