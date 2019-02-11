@@ -21,10 +21,21 @@ $("#submit-input").on("click", function (event) {
         message: personMessage,
     };
     database.ref().push(newPerson);
-    console.log(newPerson.name);
-    console.log(newPerson.email);
-    console.log(newPerson.message);
     $("#name-input").val("");
     $("#email-input").val("");
     $("#message-input").val("");
+});
+
+$("#home-button").click(function (event) {
+    event.preventDefault();
+    $("html, body").animate({
+        scrollTop: 0
+    }, "slow");
+    return false;
+});
+
+$("#about-button").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".my-about-page").offset().top},
+        'slow');
 });
