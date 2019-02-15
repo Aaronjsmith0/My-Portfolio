@@ -26,6 +26,16 @@ body {
     height: 70px;
 }
 
+.my-portfolio-page {
+    background-color: black;
+    height: 70px;
+}
+
+.my-contact-page {
+    background-color: red;
+    height: 70px;
+}
+
 .about-page {
     background-color: white;
     background-size: cover;
@@ -36,18 +46,44 @@ body {
     border-top: 10px solid red;
 }
 
+.portfolio-page {
+    background-color: white;
+    background-size: cover;
+    height: 850px;
+    border-left: 50px solid black;
+    border-right: 50px solid black;
+    border-bottom: 50px solid black;
+    border-top: 10px solid black;
+}
+
+.contact-page {
+    background-color: white;
+    background-size: cover;
+    height: 675px;
+    border-left: 50px solid red;
+    border-right: 50px solid red;
+    border-bottom: 50px solid red;
+    border-top: 10px solid red;
+}
+
+.card {
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid red;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.card img {
+    border-radius: 25px;
+}
+
 .about-page-inner {
     margin: 20px 20px;
 }
 
 .bio-text-header {
     text-decoration: underline;
-}
-
-.portfolio-page {
-    background-color: black;
-    background-size: cover;
-    height: 800px;
 }
 
 .myPicture {

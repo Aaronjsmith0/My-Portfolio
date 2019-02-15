@@ -34,8 +34,23 @@ $("#home-button").click(function (event) {
     return false;
 });
 
-$("#about-button").click(function() {
+$("#about-button").click(function () {
     $('html,body').animate({
-        scrollTop: $(".my-about-page").offset().top},
+            scrollTop: $(".my-about-page").offset().top
+        },
+        'slow');
+});
+
+$("#portfolio-button").click(function () {
+    $('html,body').animate({
+            scrollTop: $(".my-portfolio-page").offset().top
+        },
+        'slow');
+});
+
+$("#contact-button").click(function () {
+    $('html,body').animate({
+            scrollTop: $(".my-contact-page").offset().top
+        },
         'slow');
 });
