@@ -209,7 +209,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width: 320px) and (max-width: 414px) {
     .main-page-content {
         left: 22%;
     }
@@ -220,6 +220,24 @@ body {
 
     .portfolio-page {
         height: 2055px;
+    }
+
+    .contact-page {
+        height: 760px;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 479px) {
+    .main-page-content {
+        left: 25%;
+    }
+
+    .about-page {
+        height: 1300px;
+    }
+
+    .portfolio-page {
+        height: 2140px;
     }
 
     .contact-page {
