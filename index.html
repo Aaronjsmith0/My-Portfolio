@@ -41,7 +41,7 @@
             <div class="wrapper">
                 <a target="_blank" href="https://github.com/Aaronjsmith0"><i class="fa fa-3x fa-github"></i></a>
                 <a target="_blank" href="https://www.linkedin.com/in/aaron-smith-1b6b5697/"><i class="fa fa-3x fa-linkedin"></i></a>
-                <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-file"></i></a>
+                <a target="_blank" href="assets/images/Aaron resume.pdf"><i class="fa fa-3x fa-file"></i></a>
             </div>
         </div>
     </section>
@@ -78,7 +78,7 @@
                 <div class="card-body">
                     <h5 class="card-title">My Kitchen</h5>
                     <p class="card-text">A recipe app for finding and saving all your favorite recipes and viedos on
-                        how to prepare them.</p>
+                        how to prepare them.<a href="https://github.com/prestonpatt/project1" target="blank">Github</a></p>
                 </div>
             </div>
             <div class="card">
@@ -87,7 +87,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Train Scheduler</h5>
                     <p class="card-text">A app used to track train times and minutes till next arrival implementing
-                        firebase.</p>
+                        firebase.<a href="https://github.com/Aaronjsmith0/Train-Scheduler" target="blank">Github</a></p>
                 </div>
             </div>
             <div class="card">
@@ -96,7 +96,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Football Score Game</h5>
                     <p class="card-text">A game that generates a random score and assignes random numbers to the
-                        helmets. Your objective is to match the score by clicking the helmets.</p>
+                        helmets. Your objective is to match the score by clicking the helmets.<a href="https://github.com/Aaronjsmith0/unit-4-game"
+                            target="blank">Github</a></p>
                 </div>
             </div>
         </div>
@@ -107,7 +108,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cowboys Trivia Game</h5>
                     <p class="card-text">A trivia game all about the Cowboys that gives you a certain time to answer
-                        each question and implements GIFS.</p>
+                        each question and implements GIFS.<a href="https://github.com/Aaronjsmith0/TriviaGame" target="blank">Github</a></p>
                 </div>
             </div>
             <div class="card">
@@ -115,7 +116,8 @@
                         class="card-img-top" alt="..."></a>
                 <div class="card-body">
                     <h5 class="card-title">NFL Team Hangman</h5>
-                    <p class="card-text">A hangman game that generates a random NFL team and lets you guess the team.</p>
+                    <p class="card-text">A hangman game that generates a random NFL team and lets you guess the team.<a
+                            href="https://github.com/Aaronjsmith0/Word-Guess-Game" target="blank">Github</a></p>
                 </div>
             </div>
             <div class="card">
@@ -124,20 +126,86 @@
                 <div class="card-body">
                     <h5 class="card-title">GIFTastic</h5>
                     <p class="card-text">A Gif generator that lets you add your own button to search for different
-                        GIFS.</p>
+                        GIFS.<a href="https://github.com/Aaronjsmith0/GifTastic" target="blank">Github</a></p>
                 </div>
             </div>
         </div>
     </section>
     <div class="my-contact-page"></div>
     <section class="contact-page">
-
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 py-5">
+                    <form id="contact-form" method="post" role="form">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *"
+                                            required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control"
+                                            placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control"
+                                            placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">Please specify your need *</label>
+                                        <select id="form_need" name="need" class="form-control" required="required"
+                                            data-error="Please specify your need.">
+                                            <option value=""></option>
+                                            <option value="Have a job available">Have a job available</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
+                                            rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" id="submit-input" class="btn btn-outline-danger" value="Send message">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="text-muted">
+                                            <strong>*</strong> These fields are required.<br>
+                                            Personal Email: Aaron.smith@sgws.com<br>
+                                            Personal Number: 601-953-1695
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
-
-
-
-
     <script src="assets/javascript/javascript.js"></script>
 </body>
-
 </html>
