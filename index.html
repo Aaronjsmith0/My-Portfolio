@@ -1,48 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" text="style/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <link rel="stylesheet" text="style/css" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/A.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/images/A.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
-    <title>Aaron's Awesome Portfolio</title>
+    <title>Aaron Smith's Portfolio</title>
 </head>
-<body background="assets/images/cork-wallet.png">
-    <header>
-        <ul>
-            <div class="navLinks">
-                <li><a href="contact.html">Contact</a></li>
-                <li><a style="border-right: 1px solid #777777;" href="portfolio.html">Portfolio</a></li>
-                <li><a style="border-right: 1px solid #777777;" href="index.html">About</a></li>
-            </div>
-            <li style="float:left"><p class="name">Aaron Smith</p></li>
+
+<body>
+    <div class="header">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link"><button type="button" id="home-button" class="btn btn-outline-danger">Home</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"><button type="button" id="about-button" class="btn btn-outline-danger">About Me</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"><button type="button" id="portfolio-button" class="btn btn-outline-danger">Portfolio</button></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"><button type="button" id="contact-button" class="btn btn-outline-danger">Contact</button></a>
+            </li>
         </ul>
-    </header>
-    <section class="indexMainPage">
-        <div class="space">
-            <h2 class="heading">About Me</h2>
-            <hr>
+    </div>
+    <section id="main-page">
+        <div class="main-page-content">
+            <img class="myPicture" src="assets/images/0N94HP3SF.jpg" alt="My Picture">
+            <h1 class="main-name">Aaron Jacob Smith</h1>
+            <h3 class="main-description">Full-Stack Developer</h3>
+            <div class="wrapper">
+                <a target="_blank" href="https://github.com/Aaronjsmith0"><i class="fa fa-3x fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/aaron-smith-1b6b5697/"><i class="fa fa-3x fa-linkedin"></i></a>
+                <a target="_blank" href="assets/images/Aaron resume.pdf"><i class="fa fa-3x fa-file"></i></a>
+            </div>
         </div>
-        <div class="picFloat">
-            <img src="assets/images/0N94HP3SF.jpg">
-        </div>
-        <p>My name is Aaron Jacob Smith. I was born in Conroe Texas in 1986 and my family lived in the Woodlands right outside of Houston Texas. When I was around two my family and I moved to Rockwall Texas just north of Dallas and we lived there for around two years before moving to Jackson Mississippi where I grew up till I went to college.</p>
-        <br>
-        <p>I attended the University Of Mississippi in Oxford Mississippi. I got a Bachelor of Arts degree from there majoring in Psychology and a minoring in english. During my time in Oxford I worked as a chef at a cajun steak house working my way through the different positions in the kitchen till I became sous chef.</p>
-        <br>
-        <p>During my junior year of college I met my now wife, Maebh, and after we were both done with school I decided that I would move to Dallas where she was from. Shortly after moving to Dallas I got my first job as a sales rep for a liquor distributor, Republic National Distributing Company, and was resposible for selling wine to grocery stores. I worked for RNDC for a total of almost four years before I decided I would like to move to the other side of the company and start selling wine to restaurants, bars, hotels, etc. My company was reluctant to move me out of the retail world which i found out after they just didn't want to lose me on that side of the buisness.</p>
-        <br>
-        <p>I reached out to some of the people that I knew from my competing company, Southern Glazers Wine & Spirits, that my wife worked at for two years and they ended up having one of the top sales routes in Dallas open up and they called me in for a interview. I ended up getting the job and have now been working in that role for almost three years now.</p>
-        <br>
-        <p>I have now come to realize that I don't want to be in sales for my career so I started looking at different options and things that I may like doing. I knew since my entire career was in sales that I may have to do some sort of continuing education so that I could move into a different career. I just so happened to have a friend that went through the SMU Coding Bootcamp and after talking to him thought that I may like to pursue web development. I ended up doing some free courses online and really enjoyed them so I decided to sign up and go through the course myself.</p>
     </section>
-    <footer>
-        <p style="padding-top:20px;">Ajsmith LLC</p>
-    </footer>
+    <div class="my-about-page"></div>
+    <section class="about-page">
+        <div class="about-page-inner">
+            <h2 class="bio-text-header">About Me</h2>
+            <p class="aboutP">My name is Aaron Jacob Smith and I am a full-stack Web and Software Developer currently
+                living in
+                Dallas, TX. I have a Bachelor of Arts Degree from the University of Mississippi with a major in
+                Psychology, and also a Full-Stack Developer certificate from Southern Methodist University in Dallas.</p>
+            <h2 class="bio-text-header2">Languages</h2>
+            <div class="my-icons">
+                <div class="wrapper2">
+                    <i class="devicon-github-plain-wordmark colored"></i>
+                    <i class="devicon-html5-plain-wordmark colored"></i>
+                    <i class="devicon-css3-plain-wordmark colored"></i>
+                    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                    <i class="devicon-nodejs-plain colored"></i>
+                </div>
+            </div>
+            <h2 class="bio-text-header2">Currently</h2>
+            <p class="aboutP">If I’m not working on my own projects or projects for others, I’m studying new skills to
+                keep from
+                falling behind the technological curve. If you have a web project or job opening for which you are in
+                need of a reliable, perfectionist engineer who loves to code, please don’t hesitate to reach out to me
+                in my contacts section below.</p>
+        </div>
+    </section>
+    <div class="my-portfolio-page"></div>
+    <section class="portfolio-page">
+        <div class="card-deck">
+            <div class="card">
+                <a href="https://prestonpatt.github.io/project1/" target="blank"><img src="assets/images/myKitchen.PNG"
+                        class="card-img-top" alt="recipe searcher"></a>
+                <div class="card-body">
+                    <h5 class="card-title">My Kitchen</h5>
+                    <p class="card-text">A recipe app for finding and saving all your favorite recipes and viedos on
+                        how to prepare them.<a href="https://github.com/prestonpatt/project1" target="blank">Github</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://aaronjsmith0.github.io/Train-Scheduler/" target="blank"><img src="assets/images/train-app.PNG"
+                        class="card-img-top" alt="train scheduler"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Train Scheduler</h5>
+                    <p class="card-text">A app used to track train times and minutes till next arrival implementing
+                        firebase.<a href="https://github.com/Aaronjsmith0/Train-Scheduler" target="blank">Github</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://aaronjsmith0.github.io/unit-4-game/" target="blank"><img src="assets/images/football-random-score.PNG"
+                        class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Football Score Game</h5>
+                    <p class="card-text">A game that generates a random score and assignes random numbers to the
+                        helmets. Your objective is to match the score by clicking the helmets.<a href="https://github.com/Aaronjsmith0/unit-4-game"
+                            target="blank">Github</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <a href="https://aaronjsmith0.github.io/TriviaGame/" target="blank"><img src="assets/images/cowboys-trivia.PNG"
+                        class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Cowboys Trivia Game</h5>
+                    <p class="card-text">A trivia game all about the Cowboys that gives you a certain time to answer
+                        each question and implements GIFS.<a href="https://github.com/Aaronjsmith0/TriviaGame" target="blank">Github</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://aaronjsmith0.github.io/Word-Guess-Game/" target="blank"><img src="assets/images/hangman.PNG"
+                        class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">NFL Team Hangman</h5>
+                    <p class="card-text">A hangman game that generates a random NFL team and lets you guess the team.<a
+                            href="https://github.com/Aaronjsmith0/Word-Guess-Game" target="blank">Github</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="https://aaronjsmith0.github.io/GifTastic/" target="blank"><img src="assets/images/football-gifs.PNG"
+                        class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">GIFTastic</h5>
+                    <p class="card-text">A Gif generator that lets you add your own button to search for different
+                        GIFS.<a href="https://github.com/Aaronjsmith0/GifTastic" target="blank">Github</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="my-contact-page"></div>
+    <section class="contact-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 py-5">
+                    <form id="contact-form" method="post" role="form">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *"
+                                            required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control"
+                                            placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control"
+                                            placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_need">Please specify your need *</label>
+                                        <select id="form_need" name="need" class="form-control" required="required"
+                                            data-error="Please specify your need.">
+                                            <option value=""></option>
+                                            <option value="Have a job available">Have a job available</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *"
+                                            rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" id="submit-input" class="btn btn-outline-danger" value="Send message">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="text-muted">
+                                            <strong>*</strong> These fields are required.<br>
+                                            Personal Email: Aaron.smith@sgws.com<br>
+                                            Personal Number: 601-953-1695
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="assets/javascript/javascript.js"></script>
 </body>
+
 </html>
