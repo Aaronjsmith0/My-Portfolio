@@ -167,37 +167,41 @@ body {
     transition: all ease-in-out 150ms;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1999px){
+@media only screen and (min-width: 992px) and (max-width: 1999px) {
     .main-page-content {
         left: 44%;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px){
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .main-page-content {
         left: 37%;
     }
 
     .about-page {
-        height: 745px;
+        height: 740px;
     }
 
     .portfolio-page {
         height: 875px;
     }
+
+    .contact-page {
+        height: 600px;
+    }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px){
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     .main-page-content {
-        left: 29%;
+        left: 35%;
     }
 
     .about-page {
-        height: 1012px;
+        height: 925px;
     }
 
     .portfolio-page {
-        height: 2166px;
+        height: 970px;
     }
 
     .contact-page {
@@ -205,13 +209,13 @@ body {
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px){
+@media only screen and (min-width: 320px) and (max-width: 479px) {
     .main-page-content {
         left: 22%;
     }
 
     .about-page {
-        height: 1250px;
+        height: 1410px;
     }
 
     .portfolio-page {

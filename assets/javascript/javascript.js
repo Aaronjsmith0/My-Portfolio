@@ -30,6 +30,7 @@ $("#submit-input").on("click", function (event) {
     $("#form_email").val("");
     $("#form_need").val("");
     $("#form_message").val("");
+    alert('Your information has been sent to Aaron!');
 });
 
 $("#home-button").click(function (event) {
