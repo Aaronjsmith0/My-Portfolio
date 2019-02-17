@@ -12,52 +12,14 @@ var database = firebase.database();
 
 $("#submit-input").on("click", function (event) {
     event.preventDefault();
-    var personFirstName = $("#form_name").val().trim();
-    var personLastName = $("#form_lastname").val().trim();
-    var personEmail = $("#form_email").val().trim();
-    var personNeed = $("#form_need").val().trim();
-    var personMessage = $("#form_message").val().trim();
+    var personEmail = $("#exampleInputEmail1").val().trim();
+    var personMessage = $("#exampleMessage").val().trim();
     var newPerson = {
-        firstName: personFirstName,
-        lastName: personLastName,
         email: personEmail,
-        need: personNeed,
         message: personMessage,
     };
     database.ref().push(newPerson);
-    $("#form_name").val("");
-    $("#form_lastname").val("");
-    $("#form_email").val("");
-    $("#form_need").val("");
-    $("#form_message").val("");
+    $("#exampleInputEmail1").val("");
+    $("#exampleMessage").val("");
     alert('Your information has been sent to Aaron!');
-});
-
-$("#home-button").click(function (event) {
-    event.preventDefault();
-    $("html, body").animate({
-        scrollTop: 0
-    }, "slow");
-    return false;
-});
-
-$("#about-button").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".my-about-page").offset().top
-        },
-        'slow');
-});
-
-$("#portfolio-button").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".my-portfolio-page").offset().top
-        },
-        'slow');
-});
-
-$("#contact-button").click(function () {
-    $('html,body').animate({
-            scrollTop: $(".my-contact-page").offset().top
-        },
-        'slow');
 });

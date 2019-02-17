@@ -7,13 +7,6 @@ body {
     overflow-x: hidden;
 }
 
-.header {
-    background-color: black;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-}
-
 #main-page {
     background: url(../images/coding-background-1.png) no-repeat center fixed;
     background-size: cover;
@@ -21,82 +14,45 @@ body {
     justify-content: center;
 }
 
-.my-about-page {
-    background-color: red;
-    height: 70px;
-}
-
-.my-portfolio-page {
-    background-color: black;
-    height: 70px;
-}
-
-.my-contact-page {
-    background-color: red;
-    height: 70px;
-}
-
 .about-page {
-    background-color: white;
-    background-size: cover;
-    height: 675px;
-    border-left: 50px solid red;
-    border-right: 50px solid red;
-    border-bottom: 50px solid red;
-    border-top: 10px solid red;
+    height: 740px;
 }
 
 .portfolio-page {
-    background-color: white;
     background-size: cover;
-    height: 850px;
-    border-left: 50px solid black;
-    border-right: 50px solid black;
-    border-bottom: 50px solid black;
-    border-top: 10px solid black;
-}
-
-.contact-page {
-    background-color: white;
-    background-size: cover;
-    height: 675px;
-    border-left: 50px solid red;
-    border-right: 50px solid red;
-    border-bottom: 50px solid red;
-    border-top: 10px solid red;
+    height: 880px;
 }
 
 .card {
-    border-radius: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
     border: 1px solid red;
-    box-shadow: 2px 2px 5px #333;
-}
-
-.card img {
-    border-radius: 25px;
-}
-
-.about-page-inner {
-    margin: 20px 20px;
 }
 
 .bio-text-header {
     text-decoration: underline;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 60px;
 }
 
 .bio-text-header2 {
     text-decoration: underline;
     margin-top: 60px;
+    text-align: center;
+    font-size: 60px;
 }
 
 .aboutP {
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .myPicture {
     border-radius: 50%;
+}
+
+.my-icons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,107 +67,94 @@ body {
 
 .main-name {
     top: 40%;
-    left: -4rem;
+    left: -14rem;
     position: relative;
-    width: 340px;
-    margin: 0;
-    color: red;
+    width: 640px;
+    color: white;
+    font-size: 75px;
 }
 
 .main-description {
     top: 40%;
-    left: -1.5rem;
+    left: -2.5rem;
     position: relative;
     width: 340px;
     margin: 0;
-    color: red;
-}
-
-.wrapper {
-    display: inline-flex;
-    justify-content: center;
-}
-
-.wrapper i {
-    padding: 10px;
-    text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 150ms;
-}
-
-.wrapper a:nth-child(1) {
-    color: black;
-}
-
-.wrapper a:nth-child(2) {
-    color: #4867AA;
-}
-
-.wrapper a:nth-child(3) {
-    color: #1DA1F2;
-}
-
-.wrapper i:hover {
-    margin-top: -3px;
-    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+    color: white;
 }
 
 .wrapper2 {
     display: inline-flex;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 5rem;
+    padding-top: 15px;
 }
 
 .wrapper2 i {
     padding: 10px;
-    text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
-    transition: all ease-in-out 150ms;
+}
+
+.footer {
+    background-color: black;
+    padding-top: 20px;
+}
+
+.footer h5 {
+    color: white;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1999px) {
     .main-page-content {
-        left: 44%;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .main-page-content {
-        left: 37%;
+        left: 43%;
+        top: 19%;
     }
 
     .about-page {
-        height: 740px;
+        height: 910px;
     }
 
     .portfolio-page {
-        height: 875px;
-    }
-
-    .contact-page {
-        height: 600px;
+        height: 815px;
     }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 770px) and (max-width: 991px) {
     .main-page-content {
-        left: 35%;
+        left: 40%;
     }
 
     .about-page {
-        height: 925px;
+        height: 1045px;
     }
 
     .portfolio-page {
-        height: 970px;
-    }
-
-    .contact-page {
-        height: 760px;
+        height: 885px;
     }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 414px) {
+@media only screen and (min-width: 650px) and (max-width: 768px) {
     .main-page-content {
-        left: 22%;
+        left: 38%;
+    }
+
+    .about-page {
+        height: 1040px;
+    }
+
+    .portfolio-page {
+        height: 880px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 640px) {
+    .main-page-content {
+        left: 38%;
+    }
+
+    .main-name {
+        left: -12rem;
+        width: 640px;
+        font-size: 65px;
     }
 
     .about-page {
@@ -219,11 +162,31 @@ body {
     }
 
     .portfolio-page {
-        height: 2055px;
+        height: 1020px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 414px) {
+    .main-page-content {
+        left: 23%;
     }
 
-    .contact-page {
-        height: 760px;
+    .main-name {
+        left: -3rem;
+        font-size: 35px;
+    }
+
+    .main-description {
+        left: 0.5rem;
+        font-size: 20px;
+    }
+
+    .about-page {
+        height: 1910px;
+    }
+
+    .portfolio-page {
+        height: 2190px;
     }
 }
 
@@ -232,15 +195,21 @@ body {
         left: 25%;
     }
 
+    .main-name {
+        left: -3rem;
+        font-size: 35px;
+    }
+
+    .main-description {
+        left: 0.5rem;
+        font-size: 20px;
+    }
+
     .about-page {
-        height: 1300px;
+        height: 1680px;
     }
 
     .portfolio-page {
-        height: 2140px;
-    }
-
-    .contact-page {
-        height: 760px;
+        height: 2255px;
     }
 }
