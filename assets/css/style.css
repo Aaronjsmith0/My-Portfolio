@@ -29,6 +29,10 @@ body {
     border: 1px solid red;
 }
 
+#single-card {
+    width: 22rem;
+}
+
 .bio-text-header {
     text-decoration: underline;
     margin-top: 20px;
@@ -114,7 +118,11 @@ body {
     }
 
     .portfolio-page {
-        height: 815px;
+        height: 1165px;
+    }
+
+    #single-card {
+        left: 1%;
     }
 }
 
@@ -128,7 +136,12 @@ body {
     }
 
     .portfolio-page {
-        height: 885px;
+        height: 1220px;
+    }
+
+    #single-card {
+        width: 14rem;
+        left: 2%;
     }
 }
 
@@ -142,7 +155,12 @@ body {
     }
 
     .portfolio-page {
-        height: 880px;
+        height: 1215px;
+    }
+
+    #single-card {
+        width: 13rem;
+        left: 2%;
     }
 }
 
@@ -162,7 +180,12 @@ body {
     }
 
     .portfolio-page {
-        height: 1020px;
+        height: 1345px;
+    }
+
+    #single-card {
+        width: 10rem;
+        left: 2%;
     }
 }
 
@@ -186,7 +209,12 @@ body {
     }
 
     .portfolio-page {
-        height: 2190px;
+        height: 2560px;
+    }
+
+    #single-card {
+        width: 22rem;
+        left: 3%;
     }
 }
 
@@ -210,6 +238,11 @@ body {
     }
 
     .portfolio-page {
-        height: 2255px;
+        height: 2630px;
+    }
+
+    #single-card {
+        width: 24rem;
+        left: 3%;
     }
 }
