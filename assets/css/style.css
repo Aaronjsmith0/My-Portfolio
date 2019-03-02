@@ -132,7 +132,7 @@ body {
     }
 
     .about-page {
-        height: 1045px;
+        height: 1140px;
     }
 
     .portfolio-page {
@@ -150,8 +150,12 @@ body {
         left: 38%;
     }
 
+    #main-page {
+        height: 1025px;
+    }
+
     .about-page {
-        height: 1040px;
+        height: 1150px;
     }
 
     .portfolio-page {
@@ -234,7 +238,7 @@ body {
     }
 
     .about-page {
-        height: 1680px;
+        height: 1780px;
     }
 
     .portfolio-page {
