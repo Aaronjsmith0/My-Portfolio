@@ -1,4 +1,5 @@
 # My-Portfolio
+![my-portfolio](/assets/images/readme.PNG)
 ## About Me
 My name is Aaron Jacob Smith and I am a full-stack Web and Software Developer currently living in Dallas, TX. I have a Bachelor of Arts Degree from the University of Mississippi with a major in Psychology, and also a Full-Stack Developer certification from Southern Methodist University in Dallas.
 ## Languages
